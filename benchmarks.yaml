@@ -39,14 +39,14 @@
   run:
     cmd: node
     args: ["--no-warnings", "index.js"]
-# - id: graphql-yoga-bun
-#   name: GraphQL Yoga on Bun
-#   url: https://github.com/dotansimha/graphql-yoga
-#   lang: Bun
-#   server: http
-#   run:
-#     cmd: bun
-#     args: ["index.js"]
+- id: graphql-yoga-bun
+  name: GraphQL Yoga on Bun
+  url: https://github.com/dotansimha/graphql-yoga
+  lang: Bun
+  server: http
+  run:
+    cmd: bun
+    args: ["index.js"]
 - id: hono
   name: Hono
   url: https://github.com/honojs/graphql-server
