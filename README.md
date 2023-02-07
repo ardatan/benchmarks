@@ -27,7 +27,6 @@ The API is served over HTTP using a common web server and load tested using [bom
 | [Juniper](https://github.com/graphql-rust/juniper) | Rust | Actix Web | 4.94ms | 20kps |
 | [Hot Chocolate](https://github.com/ChilliCream/hotchocolate) | C# | ASP.NET | 8.76ms | 11kps |
 | [Mercurius](https://github.com/mercurius-js/mercurius) | Node.js | Fastify | 9.51ms | 11kps |
-| [agoo](https://github.com/ohler55/agoo) | Ruby/C | agoo | 9.85ms | 10kps |
 | [graphql-go](https://github.com/graphql-go/graphql) | Go | net/http | 11.40ms | 8.8kps |
 | [Hono](https://github.com/honojs/graphql-server) | Bun | HonoJS | 16.17ms | 6.2kps |
 | [graphql-jit](https://github.com/zalando-incubator/graphql-jit) | Node.js | http | 22.72ms | 4.4kps |

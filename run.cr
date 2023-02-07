@@ -39,7 +39,7 @@ end.each { |_| ch.receive }
 benchmarks.each_with_index do |b, i|
   if port_bound?
     # a TERM signal doesn't always end all processes
-    # agoo takes many seconds to terminate, and python doesn't terminate since we started using `pipenv run`
+    # some servers take many seconds to terminate, and python doesn't terminate since we started using `pipenv run`
     # there may be a proper solution for each case, but for now we use fuser as a workaround
     system("fuser -k 8000/tcp")
     raise "port 8000 already in use" unless wait_unbound 60

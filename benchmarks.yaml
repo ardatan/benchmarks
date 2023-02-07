@@ -1,12 +1,4 @@
-# should be alphabetical but agoo must come first or it will say adress in use
-- id: agoo
-  name: agoo
-  url: https://github.com/ohler55/agoo
-  lang: Ruby/C
-  server: agoo
-  run:
-    cmd: ruby
-    args: ["main.rb"]
+# should be alphabetical
 - id: absinthe
   name: Absinthe
   url: https://github.com/absinthe-graphql/absinthe
