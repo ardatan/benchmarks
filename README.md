@@ -20,10 +20,10 @@ The API is served over HTTP using a common web server and load tested using [bom
 
 | Name                          | Language      | Server          | Latency avg      | Requests      |
 | ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
-| [GraphQL Yoga on Bun](https://github.com/dotansimha/graphql-yoga) | Bun | http | 4.46ms | 22kps |
-| [Mercurius](https://github.com/mercurius-js/mercurius) | Node.js | Fastify | 7.70ms | 13kps |
-| [Hono](https://github.com/honojs/graphql-server) | Bun | HonoJS | 12.49ms | 8.0kps |
-| [GraphQL Yoga on Node](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 14.40ms | 7.0kps |
-| [graphql-jit](https://github.com/zalando-incubator/graphql-jit) | Node.js | http | 17.59ms | 5.7kps |
-| [apollo](https://github.com/apollographql/apollo-server) | Node.js | Express | 32.13ms | 3.1kps |
-| [graphql-js](https://github.com/graphql/graphql-js) | Node.js | http | 39.65ms | 2.5kps |
+| [GraphQL Yoga on Bun](https://github.com/dotansimha/graphql-yoga) | Bun | http | 4.30ms | 23kps |
+| [Mercurius](https://github.com/mercurius-js/mercurius) | Node.js | Fastify | 5.93ms | 17kps |
+| [Hono](https://github.com/honojs/graphql-server) | Bun | HonoJS | 11.45ms | 8.7kps |
+| [GraphQL Yoga on Node](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 11.98ms | 8.3kps |
+| [graphql-jit](https://github.com/zalando-incubator/graphql-jit) | Node.js | http | 15.58ms | 6.4kps |
+| [apollo](https://github.com/apollographql/apollo-server) | Node.js | Express | 24.64ms | 4.0kps |
+| [graphql-js](https://github.com/graphql/graphql-js) | Node.js | http | 32.66ms | 3.1kps |
