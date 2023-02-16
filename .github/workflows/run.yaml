@@ -3,8 +3,6 @@ name: Run benchmarks
 on:
   pull_request:
   push:
-    branches:
-      - main
     paths-ignore:
       - README.md
 
@@ -53,7 +51,6 @@ jobs:
       - name: Run benchmarks
         run: nix-shell --quiet --run ./run.cr
       - name: Push readme
-        if: ${{ github.event_name == 'push' }}
         run: |
           git add README.md
           git commit -m "update readme"
