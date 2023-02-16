@@ -4,14 +4,24 @@
 
 This shows the benchmarks for different servers.
 
-There are 4 services;
+### Results
+
+| Name                          | Language      | Server          | Latency avg      | Requests      |
+| ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
+<%- benchmarks.each do |b| -%>
+| [<%= b.name %>](<%= b.url %>) | <%= b.lang %> | <%= b.server %> | <%= b.latency %> | <%= b.reqs %> |
+<%- end -%>
+
+### What it does?
+
+For each server a gateway is implemented with the following sources;
 
 - [Accounts](./common/accounts.js)
 - [Inventory](./common/inventory.js)
 - [Products](./common/products.js)
 - [Reviews](./common/reviews.js)
 
-And the gateway receives the following complex query on every HTTP request;
+On each HTTP request, the gateway receives the following complex query;
 
 ```graphql
 fragment User on User {
@@ -53,14 +63,4 @@ query TestQuery {
 }
 ```
 
-[Accounts](./common/accounts.js)
-
 The API is served over HTTP using a common web server and load tested using [bombardier](https://github.com/codesenberg/bombardier).
-
-### Results
-
-| Name                          | Language      | Server          | Latency avg      | Requests      |
-| ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
-<%- benchmarks.each do |b| -%>
-| [<%= b.name %>](<%= b.url %>) | <%= b.lang %> | <%= b.server %> | <%= b.latency %> | <%= b.reqs %> |
-<%- end -%>
