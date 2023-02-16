@@ -4,16 +4,6 @@
 
 Graphql server benchmarks in many languages. Pull requests welcome, please read [CONTRIBUTING.md](CONTRIBUTING.md)
 
-All servers implement a simple schema:
-
-```graphql
-type Query {
-  hello: String!
-}
-```
-
-The returned string is always `world`.
-
 The API is served over HTTP using a common web server and load tested using [bombardier](https://github.com/codesenberg/bombardier).
 
 ### Results

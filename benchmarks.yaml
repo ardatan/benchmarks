@@ -1,6 +1,6 @@
 # should be alphabetical but agoo must come first or it will say adress in use
 - id: graphql-yoga
-  name: GraphQL Yoga on Node
+  name: GraphQL Yoga
   url: https://github.com/dotansimha/graphql-yoga
   lang: Node.js
   server: http
@@ -8,7 +8,7 @@
     cmd: node
     args: ["--no-warnings", "index.js"]
 - id: apollo
-  name: apollo
+  name: Apollo Server
   url: https://github.com/apollographql/apollo-server
   lang: Node.js
   server: Express
