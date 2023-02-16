@@ -44,7 +44,7 @@ benchmarks.each_with_index do |b, i|
     sleep 1
   end
 
-  res = `bombardier -c #{System.cpu_count * 50} -d 5s -m POST -b 'fragment User on User {  id  username  name}fragment Review on Review {  id  body}fragment Product on Product {  inStock  name  price  shippingEstimate  upc  weight}query TestQuery {  users {    ...User    reviews {      ...Review      product {        ...Product      }    }  }  topProducts {    ...Product    reviews {      ...Review      author {        ...User      }    }  }}' -H "Content-Type: application/json" -o json -p r http://localhost:8000/graphql`
+  res = `bombardier -c #{System.cpu_count * 50} -d 5s -m POST -b '{"query":"fragment User on User {  id  username  name}fragment Review on Review {  id  body}fragment Product on Product {  inStock  name  price  shippingEstimate  upc  weight}query TestQuery {  users {    ...User    reviews {      ...Review      product {        ...Product      }    }  }  topProducts {    ...Product    reviews {      ...Review      author {        ...User      }    }  }}"}' -H "Content-Type: application/json" -o json -p r http://localhost:8000/graphql`
   exit 1 unless $?.success?
 
   p.terminate
