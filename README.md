@@ -4,14 +4,23 @@
 
 This shows the benchmarks for different servers.
 
-There are 4 services;
+### Results
+
+| Name                          | Language      | Server          | Latency avg      | Requests      |
+| ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
+| [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 884.07ms | 100ps |
+| [Apollo Server](https://github.com/apollographql/apollo-server) | Node.js | Express | 1,184.60ms | 81ps |
+
+### What it does?
+
+For each server a gateway is implemented with the following sources;
 
 - [Accounts](./common/accounts.js)
 - [Inventory](./common/inventory.js)
 - [Products](./common/products.js)
 - [Reviews](./common/reviews.js)
 
-And the gateway receives the following complex query on every HTTP request;
+On each HTTP request, the gateway receives the following complex query;
 
 ```graphql
 fragment User on User {
@@ -53,13 +62,4 @@ query TestQuery {
 }
 ```
 
-[Accounts](./common/accounts.js)
-
 The API is served over HTTP using a common web server and load tested using [bombardier](https://github.com/codesenberg/bombardier).
-
-### Results
-
-| Name                          | Language      | Server          | Latency avg      | Requests      |
-| ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
-| [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 1,024.80ms | 84ps |
-| [Apollo Server](https://github.com/apollographql/apollo-server) | Node.js | Express | 1,480.79ms | 61ps |
