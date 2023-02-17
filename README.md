@@ -8,8 +8,10 @@ This shows the benchmarks for different servers.
 
 | Name                          | Language      | Server          | Latency avg      | Requests      |
 | ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
-| [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 884.07ms | 100ps |
-| [Apollo Server](https://github.com/apollographql/apollo-server) | Node.js | Express | 1,184.60ms | 81ps |
+| [GraphQL Yoga with Response Cache](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 46.54ms | 2.2kps |
+| [GraphQL Yoga with JIT](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 764.83ms | 120ps |
+| [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) | Node.js | http | 916.90ms | 100ps |
+| [Apollo Server](https://github.com/apollographql/apollo-server) | Node.js | Express | 1,234.12ms | 64ps |
 
 ### What it does?
 
